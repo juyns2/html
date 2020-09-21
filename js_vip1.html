@@ -38,10 +38,12 @@ cursor:url(../dataflink/mouse1.png),auto;}
 
 <script>
 var v1 = document.getElementById('video1');
-function plop(){if(v1.paused) v1.play(),v1.volume=0.07; else v1.pause();}
+function plop(){if(v1.paused) v1.play(),v1.volume=0.04; else v1.pause();}
 function moum(){if(v1.muted) v1.muted = false; else v1.muted=true;}
 function icvl(){v1.volume += 0.1;}
 function dcvl(){v1.volume -= 0.1;}
+function decr(){v1.currentime -= 10;}
+function incr(){v1.currentime += 10;}
 
 
 //Các function by Duy Tân don't coppy Please.
@@ -68,6 +70,8 @@ else if(a == 65 && b == 86) moum();
 else if(b == 65 && bam.ctrlKey == true) moum();
 else if(b == 70) click2();
 else if(b == 27) click3();
+else if(b == 37) decr();
+else if(b == 39) incr();
 else {}; a=b;}
 
 function openW() {
