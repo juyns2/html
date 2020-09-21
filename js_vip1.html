@@ -38,11 +38,12 @@ cursor:url(../dataflink/mouse1.png),auto;}
 
 <script>
 var v1 = document.getElementById('video1');
+var vd_time = 10;
 function plop(){if(v1.paused) v1.play(),v1.volume=0.04; else v1.pause();}
 function moum(){if(v1.muted) v1.muted = false; else v1.muted=true;}
 function icvl(){v1.volume += 0.1;}
 function dcvl(){v1.volume -= 0.1;}
-function decr(){v1.currenTime -= 10;}
+function decr(){v1.currenTime = 10;}
 function incr(){v1.currenTime += 10;}
 
 
@@ -57,10 +58,10 @@ function click5(){
 var main = document.getElementById('main').style;
 main.height = window.innerHeight -40 + 'px';
 main.width = window.innerWidth - 30 + 'px';}
-function trai(){v1.style.left - =10px;}
-function phai(){v1.style.left + =10px;}
-function len(){v1.style.top - =10px;}
-function xuong(){v1.style.left + =10px;}
+//function trai(){v1.style.left - =10px;}
+//function phai(){v1.style.left + =10px;}
+//function len(){v1.style.top - =10px;}
+//function xuong(){v1.style.left + =10px;}
 
 var a;
 function click1(bam){
